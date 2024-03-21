@@ -1,0 +1,701 @@
+:root {
+    --btn-color: #c59075;
+    --main-dark: #363737;
+    --white: #ffffff;
+
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Black.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-ExtraLight.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Light.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Thin.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-SemiBold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-ExtraBold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto Slab';
+    background: rgb(188, 148, 129);
+    background: linear-gradient(0deg, rgba(188, 148, 129, 1) 0%, rgba(244, 233, 227, 1) 100%);
+}
+
+span {
+    font-weight: 300;
+}
+
+.common-padding-top {
+    padding: 60px 0px 0px 0px;
+}
+
+.padding {
+    padding: 70px 0px 40px 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav bar Start */
+.navbar {
+    background-color: var(--main-dark) !important;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 0px 24px;
+    color: var(--white) !important;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.navbar-toggler i {
+    color: white;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--btn-color);
+}
+
+.navbar-brand {
+    font-size: 50px;
+    text-align: center;
+    color: var(--white);
+    transition: 0.7s;
+}
+
+.navbar-brand:hover {
+    color: var(--btn-color);
+}
+
+.nav-head {
+    display: inline;
+
+}
+
+form span {
+    font-size: 9px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--btn-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.nav-icon {
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: 0.5s
+}
+
+.nav-icon:hover {
+    color: var(--btn-color);
+}
+
+/* .navigation {
+    background-color: var(--main-dark);
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.nav h1 {
+    text-align: center;
+    color: var(--btn-color);
+    font-size: 70px;
+    padding: 30px 0px 10px 0px;
+}
+
+.nav p {
+    color: var(--white);
+    margin-right: 50px;
+}
+
+.nav-li {
+    list-style: none;
+    color: var(--white);
+    gap: 44px;
+}
+
+*/
+/* Hero section */
+.hero-section {
+    background: url(../image/hero-img.png);
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero-inner {
+    min-width: 250px;
+    width: 30%;
+    margin-left: auto;
+}
+
+.pastry-btns {
+    width: 68%;
+    height: 38px;
+    border-radius: 50px;
+    background-color: var(--btn-color);
+    color: var(--white);
+    border: var(--btn-color);
+    transition: 0.5s;
+}
+
+.pastry-btns:hover {
+    background-color: var(--white);
+    color: var(--btn-color);
+}
+
+/* healthy-and-delicious */
+.helthy-h3 {
+    color: var(--btn-color);
+
+}
+
+.buy-now {
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    border-radius: 50px;
+    font-size: 22px;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.buy-now:hover {
+    background-color: var(--white);
+    border: 1px solid;
+    color: var(--main-dark);
+}
+
+/* Bevarage Courses */
+.baverage-courses {
+    background: url(../image/beverage-courses.png);
+    height: 100vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu-desc p {
+    width: 70%;
+}
+
+.baverage-inner {
+    width: 50%;
+    margin-left: auto;
+}
+
+.baverage-inner input {
+    margin-left: auto;
+    width: 46%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 50px;
+    margin: 5px 0px;
+    font-weight: bold;
+    background-color: var(--white);
+    border: var(--white);
+}
+
+.baverage-inner button {
+    margin-left: auto;
+    border-radius: 50px;
+    width: 46%;
+    height: 38px;
+    margin: 5px 0px;
+    background-color: var(--btn-color);
+    color: var(--white);
+    border: var(--btn-color);
+    transition: 0.5s;
+
+}
+
+.baverage-inner p {
+    width: 44%;
+    font-size: 12px;
+    font-weight: 300;
+    margin: auto;
+}
+
+.baverage-inner button:hover {
+    background-color: var(--main-dark);
+    color: var(--btn-color);
+}
+
+.bevarage-form {
+    text-align: center;
+
+}
+
+/* Bevarage Menu */
+.menu-backg {
+    background: var(--main-dark);
+    border-radius: 100px;
+    box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+    color: white;
+}
+
+.menu-backg img {
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.menu h1 {
+    font-size: 66px;
+}
+
+.menu h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.menu-name {
+    display: flex;
+    justify-content: space-between
+}
+
+.shakes-menu {
+    width: 86%;
+    border-radius: 50px;
+    height: 52px;
+    font-size: 28px;
+    background-color: var(--btn-color);
+    color: white;
+    transition: 0.7s;
+}
+
+.shakes-menu:hover {
+    background-color: var(--main-dark);
+    color: var(--btn-color);
+}
+
+/* Sugar Free section Start */
+.sugar-free-shakes {
+    background: url(../image/sugar-free.png);
+    height: 100vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sugar-free-inner {
+    width: 40%;
+}
+
+.sugar-free-inner h1 {
+    font-size: 76px;
+    font-weight: 200;
+}
+
+.sugar-free-inner h2 {
+    font-size: 38px;
+
+}
+
+.sugar-free-child p {
+    font-size: 26px;
+}
+
+.sugar-free-child button {
+    width: 50%;
+    height: 41px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 5px 0px;
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    color: var(--white);
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.sugar-free-child button:hover {
+    background-color: var(--main-dark);
+    color: var(--btn-color);
+}
+
+/*Learn more about us */
+.common-backg {
+    background-color: var(--white);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.common-backg img {
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+.common-inner h2 {
+    font-size: 38px;
+    max-width: 44%;
+}
+
+.common-inner h2:nth-child(2) {
+    max-width: 84%;
+}
+
+.about-h2 {
+    font-weight: 200;
+}
+
+.common-inner p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.read-more {
+    background: var(--btn-color);
+    border: var(--btn-color);
+    color: var(--white);
+    width: 66%;
+    height: 38px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-weight: 500;
+    margin: 40px 0px;
+}
+
+.read-more:hover {
+    background-color: var(--white);
+    color: var(--btn-color);
+    border: 1px solid;
+}
+
+/* Favorite seasonal smoothie */
+.seasonal-details {
+    background-color: var(--white);
+}
+
+.seasonal-details ul {
+    font-weight: 700;
+}
+
+.cart {
+    display: flex;
+
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.seasonal-img img {
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.button-add {
+    display: flex;
+
+
+}
+
+.cart-p {
+    margin: 0px;
+}
+
+.buy-now {
+    width: 38%;
+    height: 42px;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    color: var(--white);
+}
+
+.buy-now:hover {
+    color: var(--btn-color);
+    background-color: var(--main-dark);
+}
+
+.buy {
+    width: 38%;
+    height: 46px;
+    font-size: 22px;
+    border-radius: 50px;
+    background-color: var(--main-dark);
+    color: var(--white);
+    transition: 0.5s;
+
+}
+
+.cart-details {
+    margin-left: 50px;
+}
+
+.buy:hover {
+    background-color: var(--white);
+    color: var(--main-dark);
+}
+
+.button-add button {
+    color: var(--white);
+    background-color: var(--btn-color);
+    margin: 0px 5px;
+    transition: 0.4s;
+    border: var(--btn-color);
+    width: 24px;
+}
+
+.minus {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.plus {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.button-add button:hover {
+    color: var(--btn-color);
+    background-color: var(--main-dark);
+}
+
+/* free-drink */
+
+
+.free-drink {
+    background: url(../image/Strars.png);
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+}
+
+.free-drink h1 {
+
+    font-size: 124px;
+}
+
+.free-drink h3 {
+    font-weight: 100;
+    font-size: 38px;
+}
+
+.free-drink button {
+    margin: 30px 0px;
+    width: 28%;
+    height: 48px;
+    font-size: 24px;
+    font-weight: 600;
+    background: var(--main-dark);
+    color: var(--white);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.free-drink button:hover {
+    background-color: var(--white);
+    color: var(--main-dark);
+    border: var(--white);
+}
+
+.free-drink p {
+    margin: auto;
+    width: 46%;
+    font-size: 20px;
+}
+
+/* Footer Start */
+.footer-details {
+    margin-top: 30px;
+    background-color: var(--main-dark);
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    color: var(--white);
+    box-shadow: 0 0px 36px 0 rgba(0, 0, 0, 18.2), 0 -5px 0px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 52px;
+}
+
+.footer-head {
+    text-align: center;
+}
+
+.footer-head h1 {
+    font-size: 72px;
+    color: var(--btn-color);
+    font-weight: 400;
+}
+
+
+
+.footer-head p {
+    font-size: 14px
+}
+
+.icons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+    margin-left: 84px;
+}
+
+#icon {
+    font-size: 14px;
+    background-color: var(--white);
+    color: black;
+    padding: 2px 6px;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#icon:hover {
+    background-color: var(--btn-color);
+    color: var(--white);
+}
+
+.footer-details ul {
+    list-style: none;
+    font-size: 14px;
+    padding: 0px;
+
+}
+
+.footer-link {
+    display: flex;
+
+    margin-left: 84px;
+    gap: 142px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--white);
+    line-height: 38px;
+    transition: 0.5s;
+}
+
+.footer-links a:hover {
+    color: var(--btn-color);
+}
+
+.newsletter {
+    margin-left: 40%;
+}
+
+.newsletter p {
+    font-size: 27px;
+    width: 64%;
+}
+
+
+
+.newsletter input {
+    margin-bottom: 20px;
+    width: 78%;
+    padding-left: 20px;
+    height: 38px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.newsletter button {
+    background: var(--btn-color);
+    color: var(--white);
+    width: 78%;
+    height: 38px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.newsletter button:hover {
+    background-color: var(--white);
+    color: var(--btn-color);
+}
